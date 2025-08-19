@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44cb7ca5262487499472a0261deedbe, type: 3}
+  m_Name: DrawingPattern 4
+  m_EditorClassIdentifier: 
+  drawing:
+    lines:
+    - byte1: 1
+      byte2: 2
+    - byte1: 2
+      byte2: 3
+    - byte1: 3
+      byte2: 0
+  spell: {fileID: 11400000, guid: 6e8951bad340d844db548b52370b6833, type: 2}
