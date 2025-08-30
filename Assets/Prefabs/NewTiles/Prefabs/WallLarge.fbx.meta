@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 8d2015d83ad3cd34cb8f56caf213c258
+guid: 1dbc2d71380867343b5d3c975c7eb394
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneWalls
+    second: {fileID: 2100000, guid: eaf560748e2d5d0449a30251bc3056be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneWalls1
+    second: {fileID: 2100000, guid: eaf560748e2d5d0449a30251bc3056be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneWalls2
+    second: {fileID: 2100000, guid: eaf560748e2d5d0449a30251bc3056be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: eaf560748e2d5d0449a30251bc3056be, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -48,7 +68,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
