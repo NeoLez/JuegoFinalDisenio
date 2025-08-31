@@ -10,7 +10,7 @@ namespace Achievements {
         private static float _lastTimeChecked = Single.NegativeInfinity;
         private static List<Achievement> _achievements = new();
         public static void CheckAchievements() {
-            if (Time.time - _lastTimeChecked < 0.5f) return;
+            if (Time.time - _lastTimeChecked < SecondsBetweenChecks) return;
             foreach (var achievement in _achievements) {
                 _lastTimeChecked = Time.time;
                 
