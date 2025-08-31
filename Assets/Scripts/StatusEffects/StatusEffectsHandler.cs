@@ -12,6 +12,7 @@ namespace StatusEffects {
                 _statusEffects[type] = new StatusEffectData(type, duration, gameObject);
             } else {
                 _statusEffects[type].ResetDuration(duration);
+                _statusEffects[type].Expire();
             }
         }
 
@@ -60,6 +61,7 @@ namespace StatusEffects {
             }
 
             public void Expire() {
+                ExpirationTime = float.MinValue;
                 foreach (var behaviour in _effectBehaviours) {
                     behaviour.Disable();
                 }
