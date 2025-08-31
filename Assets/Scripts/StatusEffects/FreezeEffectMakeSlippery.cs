@@ -4,10 +4,6 @@
 namespace StatusEffects {
     [RequireComponent(typeof(Collider))]
     public class FreezeEffectMakeSlippery : MonoBehaviour, IEffectBehaviour {
-        [SerializeField] private AudioClip iceEffectSound;
-        [SerializeField] private AudioClip iceEffectImpactSound;
-        [SerializeField] private GameObject iceParticlesPrefab;
-        private GameObject iceParticles;
         private Collider collider;
         private PhysicMaterial originalMaterial;
         [SerializeField] private PhysicMaterial newPhysicsMaterial;

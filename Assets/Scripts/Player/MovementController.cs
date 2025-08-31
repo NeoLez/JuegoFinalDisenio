@@ -23,7 +23,7 @@ public class MovementControllerTest : MonoBehaviour {
     [SerializeField] private MaterialType currentSoundMaterialType;
 
     [FormerlySerializedAs("airLerp")] [SerializeField] private float airMovementSnappiness;
-    [FormerlySerializedAs("groundLerp")] [SerializeField] private float groundMovementSnappiness;
+    [FormerlySerializedAs("groundMovementSnappiness")] [SerializeField] private float defaultGroundMovementSnappiness;
 
     [SerializeField] private AnimationCurve angleBasedSpeedLimit;
     
@@ -57,6 +57,7 @@ public class MovementControllerTest : MonoBehaviour {
     private Vector3 _prevJumpSpeed = Vector3.zero;
     private Vector3 _targetGroundSpeed = Vector3.zero;
     private Vector3 _currentGroundSpeed = Vector3.zero;
+    private PhysicMaterial _currentPhysicsMaterial;
     private void FixedUpdate() {
         UpdateMovementState();
         HandleMovement();
@@ -85,10 +86,15 @@ public class MovementControllerTest : MonoBehaviour {
                 _gravitySpeed += Physics.gravity * Time.fixedDeltaTime;
                 break;
             case CharacterState.Grounded:
+                float groundSlipperiness = defaultGroundMovementSnappiness;
+                if (_currentPhysicsMaterial != null) {
+                    groundSlipperiness = _currentPhysicsMaterial.dynamicFriction;
+                }
+                
                 CanDash = true;
                 _speed = Vector3.ProjectOnPlane(_speed, _currentSurfaceNormal);
-                _speed = Vector3.Lerp(_prevSpeed, _speed, groundMovementSnappiness);
-                _currentGroundSpeed = Vector3.Lerp(_currentGroundSpeed, _targetGroundSpeed, groundMovementSnappiness);
+                _speed = Vector3.Lerp(_prevSpeed, _speed, groundSlipperiness);
+                _currentGroundSpeed = Vector3.Lerp(_currentGroundSpeed, _targetGroundSpeed, groundSlipperiness);
                 if(_gravitySpeed.y < 0)//Never make gravitySpeed 0 if it points away from the floor (caused by jump). 
                     _gravitySpeed = Vector3.zero;//Set to 0 to prevent it from accumulating speed while the player is standing.
                 break;
@@ -97,7 +103,7 @@ public class MovementControllerTest : MonoBehaviour {
                 if (_speed.y > 0) //Prevent player from climbing up the slope under any circumstance
                     _speed.y = 0;
             
-                _speed = Vector3.Lerp(_prevSpeed, _speed, groundMovementSnappiness);
+                _speed = Vector3.Lerp(_prevSpeed, _speed, defaultGroundMovementSnappiness);
                 _currentGroundSpeed = Vector3.Lerp(_currentGroundSpeed, _targetGroundSpeed, airMovementSnappiness * 0.05f);
                 
                 //Remove horizontal components from gravity vector and add them to the character velocity
@@ -177,6 +183,7 @@ public class MovementControllerTest : MonoBehaviour {
 
                 if (_currentSlopeAngle <= maxSlopeAngle) {
                     _currentState = CharacterState.Grounded;
+                    _currentPhysicsMaterial = hit.collider.gameObject.GetComponent<Collider>().material;
                 }
                 else {
                     _currentState = CharacterState.Sliding;
