@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47c5d79b-a1fe-44f1-8c2e-b270f2dbcd13" name="Changes" comment="New Walls">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_08_2025_15_20_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_08_2025_15_20__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/Wall.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/Wall.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WallLarge.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WallLarge.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WallWithDoor.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WallWithDoor.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WallWithDoorlarge.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WallWithDoorlarge.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WindowWallLarge.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/WindowWallLarge.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor01.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor01.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor01.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor02 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor02 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor02.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor02.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor02.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor02.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor03 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor03 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor03.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor03.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor03.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor03.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor04 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor04 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor04.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor04.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor04.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneFloor04.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWall01 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWall01 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWall02 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWall02 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWall03 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWall03 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWallWindow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWallWindow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWallWindowChurch.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWallWindowChurch.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWallWindowX.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/StoneWallWindowX.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WallWithArchHoleroof.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WallWithArchHoleroof.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WindowWithChurchPatron.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WindowWithChurchPatron.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WindowWithNoPatron.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WindowWithNoPatron.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WindowWithXpatron.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Models/WindowWithXpatron.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewTiles/Prefabs/StoneFloor04.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visuals/Packs/LowPolyDungeon/Materials/Potion.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visuals/Packs/LowPolyDungeon/Materials/Potion.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BeluuDavinci&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NeoLez/JuegoFinalDisenio.git&quot;,
+    &quot;accountId&quot;: &quot;6594566d-79c8-404e-a658-f44e39c4d61f&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/BELEN/RiderProjects/JuegoFinalDisenio/Assets/Scenes/Level 1.unity" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="31WaiXTb7SW18RWY8lPwWgpxk23" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47c5d79b-a1fe-44f1-8c2e-b270f2dbcd13" name="Changes" comment="" />
+      <created>1755642409168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755642409168</updated>
+      <workItem from="1755642410343" duration="2126000" />
+      <workItem from="1756239104694" duration="1334000" />
+      <workItem from="1756350135019" duration="620000" />
+      <workItem from="1756405187621" duration="622000" />
+      <workItem from="1756495572302" duration="16000" />
+      <workItem from="1756566498518" duration="658000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="New Walls" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Walls" />
+  </component>
+</project>

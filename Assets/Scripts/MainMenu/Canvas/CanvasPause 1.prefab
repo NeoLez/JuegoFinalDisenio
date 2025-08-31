@@ -8247,9 +8247,9 @@ RectTransform:
   m_LocalScale: {x: 82.79417, y: 71.35553, z: 70.84933}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5221833013302562194}
   - {fileID: 3018729390622388249}
   - {fileID: 3501740100910425072}
-  - {fileID: 5221833013302562194}
   - {fileID: 3650634724847461976}
   m_Father: {fileID: 2156227776650149773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13533,7 +13533,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6644929759869022862}
   m_Direction: 2
   m_Value: 0.99999994
-  m_Size: 0.21972115
+  m_Size: 0.22023748
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
