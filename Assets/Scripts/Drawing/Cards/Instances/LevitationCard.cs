@@ -16,7 +16,7 @@ public class LevitationCard : ThrowCard{
         var rhit = hit.Value;
         
         if (rhit.collider.gameObject.TryGetComponent(out StatusEffectsHandler status)) {
-            status.AddEffect(StatusEffectsType.LEVITATION, 16f);
+            status.AddEffect(StatusEffectsType.LEVITATION, 9999999f);
         }
         RegisterUse();
     }

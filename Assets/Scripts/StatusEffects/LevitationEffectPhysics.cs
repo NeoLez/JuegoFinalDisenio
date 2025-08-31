@@ -7,6 +7,11 @@ namespace StatusEffects {
         [SerializeField] private float maxForce;
 
         [SerializeField] private float snappiness;
+
+        [SerializeField] private float verticalOffset;
+
+        [SerializeField] private float motionSwingAmplitude;
+        
         private Rigidbody rb;
         public new StatusEffectsType GetType() {
             return StatusEffectsType.LEVITATION;
@@ -22,8 +27,8 @@ namespace StatusEffects {
         }
 
         public void Tick() {
-            Vector3 newPos = initialPosition + Vector3.up * Mathf.Sin(Time.time - initialTime) * 0.2f;
-            Vector3 movementVector = newPos - transform.position;
+            Vector3 newPos = initialPosition + Vector3.up * (Mathf.Sin(Time.time - initialTime) * motionSwingAmplitude);
+            Vector3 movementVector = newPos - transform.position + verticalOffset * Vector3.up;
             //if (movementVector.magnitude > maxForce) {
              //   movementVector.Normalize();
              //   movementVector *= maxForce;
