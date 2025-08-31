@@ -1,23 +1,17 @@
 using UnityEngine;
 
 namespace StatusEffects {
-    [RequireComponent(typeof(RotatingObstacle))]
-    public class FreezeEffectMovingPlatform : MonoBehaviour, IEffectBehaviour {
+    public class FreezeEffectsVisuals : MonoBehaviour, IEffectBehaviour {
         [SerializeField] private AudioClip iceEffectSound;
         [SerializeField] private AudioClip iceEffectImpactSound;
         [SerializeField] private GameObject iceParticlesPrefab;
         private GameObject iceParticles;
-
-        private RotatingObstacle rotatingObstacleComponent;
-        private float rotationSpeed;
         public StatusEffectsType GetType() {
             return StatusEffectsType.FREEZE;
         }
 
         public void Enable() {
             Debug.Log("Enable" + StatusEffectsType.FREEZE);
-            rotatingObstacleComponent = GetComponent<RotatingObstacle>();
-            rotationSpeed = rotatingObstacleComponent.rotationSpeed;
             
             iceParticles = Instantiate(iceParticlesPrefab, transform);
             
@@ -33,10 +27,7 @@ namespace StatusEffects {
                 frostAmount = val;
                 objMaterial.SetFloat("_IceTransition", frostAmount);
             });
-
-            LeanTween.value(gameObject, rotationSpeed, 0, 1).setOnUpdate((float val) => {
-                rotatingObstacleComponent.rotationSpeed = val;
-            });
+            
         }
 
         public void Disable() {
@@ -57,10 +48,6 @@ namespace StatusEffects {
             {
                 frostAmount = val;
                 objMaterial.SetFloat("_IceTransition", frostAmount);
-            });
-
-            LeanTween.value(gameObject, 0, rotationSpeed, 1).setOnUpdate((float val) => {
-                rotatingObstacleComponent.rotationSpeed = val;
             });
         }
 

@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+[RequireComponent(typeof(Rigidbody))]
 public class MovingPlatform : MonoBehaviour {
     [SerializeField] private List<Transform> platformPositions;
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     [SerializeField] private float minimumDistance;
     private int currentTarget = 0;
     private Rigidbody rb;
@@ -18,7 +18,10 @@ public class MovingPlatform : MonoBehaviour {
             currentTarget = (currentTarget + 1) % platformPositions.Count;
             distance = platformPositions[currentTarget].position - rb.position;
         }
-        rb.velocity = distance.normalized * speed;
+        if(distance.magnitude > speed)
+            distance.Normalize();
+        
+        rb.velocity = distance * speed;
         
         if (PlayerMovementControllerTest != null)
             PlayerMovementControllerTest.SetGroundSpeed(rb.velocity);
