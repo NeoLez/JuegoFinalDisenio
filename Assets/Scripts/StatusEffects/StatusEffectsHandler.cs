@@ -6,13 +6,13 @@ namespace StatusEffects {
     public class StatusEffectsHandler : MonoBehaviour {
         private readonly Dictionary<StatusEffectsType, StatusEffectData> _statusEffects = new();
 
-        public void AddEffect(StatusEffectsType type, float duration) {
-
+        public void AddEffect(StatusEffectsType type, float duration, bool toggle = true) {
             if (!HasEffect(type)) {
                 _statusEffects[type] = new StatusEffectData(type, duration, gameObject);
-            } else {
+            } else { 
                 _statusEffects[type].ResetDuration(duration);
-                _statusEffects[type].Expire();
+                if(toggle)
+                    _statusEffects[type].Expire();
             }
         }
 

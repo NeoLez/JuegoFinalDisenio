@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e53272f3450f2408fde47943eced3b, type: 3}
+  m_Name: Metal
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: b123491320fa5fb4c9693c27e88dbab2, type: 3}
+  - {fileID: 8300000, guid: 7af6630a1cea4d449a5683d8cb12799b, type: 3}
+  - {fileID: 8300000, guid: cec550abfe7d8bc48b776e5ed6de9a2f, type: 3}
+  - {fileID: 8300000, guid: 8143e6a000eed6e4cb4b1065216837f4, type: 3}
+  - {fileID: 8300000, guid: 3af18a42d9528f3498f3b49e46454158, type: 3}
+  - {fileID: 8300000, guid: bae02fb564bffe8448d98721e8dabf55, type: 3}

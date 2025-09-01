@@ -12,6 +12,7 @@ namespace SoundSystem {
             Dictionary[MaterialType.Carpet] = Resources.Load<FootstepMaterialSO>("Footsteps/Carpet");
             Dictionary[MaterialType.Wood] = Resources.Load<FootstepMaterialSO>("Footsteps/Wood");
             Dictionary[MaterialType.Stone] = Resources.Load<FootstepMaterialSO>("Footsteps/Stone");
+            Dictionary[MaterialType.Metal] = Resources.Load<FootstepMaterialSO>("Footsteps/Metal");
         }
     }
 }
