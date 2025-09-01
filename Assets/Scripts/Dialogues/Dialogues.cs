@@ -46,6 +46,7 @@ public class Dialogues : MonoBehaviour
             GameManager.Input.Scanner.Disable();
             GameManager.Input.Drag.Disable();
             GameManager.Input.CardUsage.Disable();
+            GameManager.Input.Pause.Disable();
         }
         isDialoguePlaying = true;
         dialoguePanel.SetActive(true);
@@ -74,6 +75,7 @@ public class Dialogues : MonoBehaviour
             GameManager.Input.Scanner.Enable();
             GameManager.Input.Drag.Enable();
             GameManager.Input.CardUsage.Enable();
+            GameManager.Input.Pause.Enable();
         }
     }
     private void EndDialogue()

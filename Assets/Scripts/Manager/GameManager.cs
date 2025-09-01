@@ -20,6 +20,7 @@ public class GameManager {
         Input.Scanner.Enable();
         Input.Cheats.Enable();
         Input.WorldInteractions.Enable();
+        Input.Pause.Enable();
 
         Input.Cheats.UnlockAllSpells.started += (ctx) => {
             DrawingPatternDatabase.UnlockAllSpells();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -20,46 +21,43 @@ public class MenuPause : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        GameManager.Input.Pause.Pause.performed += TriggerMenu;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+    private void TriggerMenu(InputAction.CallbackContext ctx) {
+        if (!paused)
         {
-            if (!paused)
+            if (sonidoPausa != null)
+                GameManager.AudioSystem.PlaySound(sonidoPausa);
+
+            PauseMenu.SetActive(true);
+            paused = true;
+
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            GameManager.Input.Movement.Disable();
+            GameManager.Input.CameraMovement.Disable();
+            GameManager.Input.BookActions.Disable();
+            GameManager.Input.Scanner.Disable();
+            GameManager.Input.Drag.Disable();
+            GameManager.Input.CardUsage.Disable();
+
+            AudioSource[] songs = FindObjectsOfType<AudioSource>();
+            foreach (AudioSource s in songs)
             {
-                if (sonidoPausa != null)
-                    GameManager.AudioSystem.PlaySound(sonidoPausa);
-
-                PauseMenu.SetActive(true);
-                paused = true;
-
-                Time.timeScale = 0;
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-
-                GameManager.Input.Movement.Disable();
-                GameManager.Input.CameraMovement.Disable();
-                GameManager.Input.BookActions.Disable();
-                GameManager.Input.Scanner.Disable();
-                GameManager.Input.Drag.Disable();
-                GameManager.Input.CardUsage.Disable();
-
-                AudioSource[] songs = FindObjectsOfType<AudioSource>();
-                foreach (AudioSource s in songs)
+                if (s != audioSource)
                 {
-                    if (s != audioSource)
-                    {
-                        s.Pause();
-                    }
+                    s.Pause();
                 }
             }
-            else
-            {
-                if (sonidoReanudar != null)
-                    GameManager.AudioSystem.PlaySound(sonidoReanudar);
-                resume();
-            }
+        }
+        else
+        {
+            if (sonidoReanudar != null)
+                GameManager.AudioSystem.PlaySound(sonidoReanudar);
+            resume();
         }
     }
 
