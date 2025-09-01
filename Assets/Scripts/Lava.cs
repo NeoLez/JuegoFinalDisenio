@@ -6,12 +6,13 @@ using UnityEngine;
 public class Lava : MonoBehaviour {
     private List<StatusEffectsHandler> collidingObjectsStatus = new();
     private List<Rigidbody> rigidbodies = new();
+    private GameObject player;
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject == GameManager.Player) {
-            
+            player = other.gameObject;
+            player.GetComponent<PlayerHealth>().Die();
         }
-        Debug.Log("a");
         if (other.gameObject.TryGetComponent(out StatusEffectsHandler status)) {
             collidingObjectsStatus.Add(status);
             status.AddEffect(StatusEffectsType.BURN, 999999, false);
@@ -22,11 +23,13 @@ public class Lava : MonoBehaviour {
     }
 
     private void OnTriggerExit(Collider other) {
+        if (other.gameObject == player)
+            player = null;
         collidingObjectsStatus.Remove(other.gameObject.GetComponent<StatusEffectsHandler>());
         rigidbodies.Remove(other.GetComponent<Rigidbody>());
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         foreach (var status in collidingObjectsStatus) {
             status.AddEffect(StatusEffectsType.BURN, 999999, false);
         }
@@ -36,8 +39,8 @@ public class Lava : MonoBehaviour {
             float force;
             if (lavaBehaviour is null)
                 return;
-            rb.velocity *= lavaBehaviour.forceReduction;
             rb.velocity += Vector3.up * lavaBehaviour.forceIntensity;
+            rb.velocity *= lavaBehaviour.forceReduction;
             rb.angularVelocity *= lavaBehaviour.forceReduction;
         }
     }

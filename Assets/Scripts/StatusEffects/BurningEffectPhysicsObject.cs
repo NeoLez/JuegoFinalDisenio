@@ -88,7 +88,8 @@ namespace StatusEffects {
         }
 
         private void OnCollisionEnter(Collision other) {
-            if (!gameObject.GetComponent<StatusEffectsHandler>().HasEffect(StatusEffectsType.BURN)) return;
+            if (!other.gameObject.TryGetComponent(out StatusEffectsHandler status)) return;
+            if (status.HasEffect(StatusEffectsType.BURN)) return;
             
             if (other.gameObject.TryGetComponent(out StatusEffectsHandler handler))
             {
