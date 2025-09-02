@@ -95,6 +95,9 @@
         },
         {
             "m_Id": "e8d272e6c5fc4da99787d750b70b4616"
+        },
+        {
+            "m_Id": "6c78d8c732d9433594e2566a6bb8d369"
         }
     ],
     "m_GroupDatas": [],
@@ -154,6 +157,20 @@
                     "m_Id": "f639771dfe65489980be93f16fdba672"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "6c78d8c732d9433594e2566a6bb8d369"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "f5defeb5a70441cca54060a68f07a58b"
+                },
+                "m_SlotId": 1242342910
             }
         },
         {
@@ -537,6 +554,21 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Cosine Time",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "22c21ab57fdd46dcb9e4d26091562cb3",
+    "m_Id": 0,
+    "m_DisplayName": "SphereDistortionScale",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
@@ -1100,6 +1132,42 @@
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "6c78d8c732d9433594e2566a6bb8d369",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -671.28369140625,
+            "y": -255.7611083984375,
+            "width": 193.43280029296876,
+            "height": 32.23878479003906
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "22c21ab57fdd46dcb9e4d26091562cb3"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "684c46f001e84212bb97f0c95b809c41"
     }
 }
 
