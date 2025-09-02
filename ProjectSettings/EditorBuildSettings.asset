@@ -7,31 +7,22 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
-    guid: a9d481982fb7deb469d61605868e72e4
+    guid: 66a7d004b6502c04eb792efc2d4aa154
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 66a7d004b6502c04eb792efc2d4aa154
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
-    guid: 2eb6a6f7223e6d14a818d00c908e804d
-  - enabled: 1
-    path: Assets/Scenes/PuzzlesM 1.unity
-    guid: 56998f674e121ed43953d8212bdd7160
-  - enabled: 0
-    path: Assets/Scenes/Base 4.unity
-    guid: c8c5bef582b53f64fb8a7e8724842f18
-  - enabled: 0
-    path: Assets/Scenes/Base 3.unity
-    guid: cd6eeebf9f033ae4481f9ccbefa6a51f
-  - enabled: 0
-    path: Assets/Scenes/Base 1.unity
-    guid: efb1f081d34c0a24bbb6d2848d285b68
-  - enabled: 0
-    path: Assets/Scenes/Base 5L 1.unity
-    guid: 3f581a8176fe355459170da34f5618ec
+    guid: 973a84dd96f29544688448686a31c591
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
-    guid: a9d481982fb7deb469d61605868e72e4
+    guid: 66a7d004b6502c04eb792efc2d4aa154
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 1d0d470f04f15394783ec9c8ec347bf7
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 5b612097cca72e5499940ed241441b64
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: c4f79367683e7474aaba8fad95db19ab, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 092f4b1dcb5966b43bd3878c7ffbdc5d, type: 2}
