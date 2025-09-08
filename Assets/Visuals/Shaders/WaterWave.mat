@@ -51,22 +51,22 @@ Material:
     m_Ints: []
     m_Floats:
     - _Amplitud: 1
-    - _Amplitude: 0.16
+    - _Amplitude: -0.12
     - _Inclinaci_n: 0
     - _Longitud_de_Ola: 1
-    - _Number_Of_Waves: 17.78
+    - _Number_Of_Waves: 12.22
     - _Numero_de_Olas: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed: 1
-    - _Steepness: 1
+    - _Steepness: 0.983
     - _Velocidad: 1
     - _Wavelenght: 3.44
     m_Colors:
     - _Direccion: {r: 1, g: 0, b: 0, a: 0}
     - _Direction: {r: 1, g: 0, b: 0, a: 0}
     - _Direction_1: {r: 1.58, g: -0.25, b: 0.76, a: 0}
-    - _Direction_2: {r: 0.99, g: 0, b: 0, a: 0}
+    - _Direction_2: {r: 0.99, g: 0, b: -14.5, a: 0}
     - _Direction_3: {r: 1.74, g: 0, b: 1.11, a: 0}
     - _Direction_4: {r: 3.39, g: 0.05, b: 0.63, a: 0}
     - _Dirreccion: {r: 1, g: 0, b: 0, a: 0}
