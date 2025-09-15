@@ -38,7 +38,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Distortion_Intensity: 0.63
+    - _Distortion_Intensity: 0
     - _QueueControl: 1
     m_Colors:
     - _Distortion_Offset_Y: {r: 0, g: 0.125, b: 0, a: 0}
