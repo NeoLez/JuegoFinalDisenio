@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1877685003833036599
+--- !u!114 &-8614274464520122458
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,16 +20,16 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lava
-  m_Shader: {fileID: -6465566751694194690, guid: 418e19f969680cd49a93395753d3b7a3, type: 3}
-  m_Parent: {fileID: -876546973899608171, guid: 418e19f969680cd49a93395753d3b7a3, type: 3}
-  m_ModifiedSerializedProperties: 18
+  m_Name: WaterWave
+  m_Shader: {fileID: -6465566751694194690, guid: 80f17146d0d759745babd34c735735ee, type: 3}
+  m_Parent: {fileID: 2100000, guid: 82efbb88447d6124d8b3d76c1f714dc9, type: 2}
+  m_ModifiedSerializedProperties: 2
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -38,9 +38,11 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Distortion_Intensity: 0
-    - _QueueControl: 1
+    - _RefrectionScale: 5
+    - _RefrectionSpeed: 3
+    - _RefrectionStrenght: 5
+    - _WaterDepth: 5
     m_Colors:
-    - _Distortion_Offset_Y: {r: 0, g: 0.125, b: 0, a: 0}
-    - _Distortion_Tiling: {r: 0.16, g: 0.17, b: 0, a: 0}
+    - _DeepWaterColor: {r: 0, g: 0.1910429, b: 1, a: 0.4392157}
+    - _ShallowWaterColor: {r: 0.3160377, g: 1, b: 0.9872573, a: 0.6156863}
   m_BuildTextureStacks: []
