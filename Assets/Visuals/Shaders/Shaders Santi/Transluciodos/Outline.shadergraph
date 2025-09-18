@@ -87,7 +87,23 @@
             "m_Id": "d23729e66ece4e16bdc2ade26d5f609c"
         }
     ],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "3b29e27a65604ae6b51209cf472ee00d"
+        },
+        {
+            "m_Id": "23e7695820b843d28586f25d9ac60492"
+        },
+        {
+            "m_Id": "38d512bad03d4f979044560e02cfae85"
+        },
+        {
+            "m_Id": "d37f15415bbb4816a08b54640fcf985a"
+        },
+        {
+            "m_Id": "366c865d26e54c47992010ce8c60c1f1"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -552,10 +568,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1048.9998779296875,
-            "y": -54.99998092651367,
-            "width": 167.9998779296875,
-            "height": 33.999969482421878
+            "x": -1059.0,
+            "y": -56.000022888183597,
+            "width": 168.00006103515626,
+            "height": 34.00000762939453
         }
     },
     "m_Slots": [
@@ -599,6 +615,26 @@
         "w": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "23e7695820b843d28586f25d9ac60492",
+    "m_Title": "",
+    "m_Content": " Con esto consigo \"eliminar\" las caras Front Faces a travez de establecerlas translucidas al %100.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -818.0,
+        "y": 878.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "d23729e66ece4e16bdc2ade26d5f609c"
+    }
 }
 
 {
@@ -671,6 +707,66 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "366c865d26e54c47992010ce8c60c1f1",
+    "m_Title": "IMPORTANTE",
+    "m_Content": "El Outline Funciona cuando hay ya un material en el objeto que no deforme la malla y siendo el outline el Material secundario y solo cuando es un objeto 3D",
+    "m_TextSize": 2,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -264.0,
+        "y": -363.0,
+        "width": 498.0,
+        "height": 343.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "38d512bad03d4f979044560e02cfae85",
+    "m_Title": "Inlfar las caras 1",
+    "m_Content": "Con el Outline y el Multipy consigo \"Inflar\" las caras del objeto",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1072.0,
+        "y": 26.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "8338cd1c3d53431885d5aa591ad10b5c"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "3b29e27a65604ae6b51209cf472ee00d",
+    "m_Title": "Logica:",
+    "m_Content": "Controlo el alpha , si faces es true entonces alpha es 0 y si es falce entocnes alpha es 1.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -818.0,
+        "y": 770.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "d23729e66ece4e16bdc2ade26d5f609c"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "47ea68fdde41408cb5e67add7e54ea07",
     "m_Group": {
@@ -715,10 +811,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -489.00006103515627,
-            "y": 620.0000610351563,
-            "width": 170.00009155273438,
-            "height": 142.0
+            "x": -527.0000610351563,
+            "y": 622.0000610351563,
+            "width": 208.0,
+            "height": 325.99993896484377
         }
     },
     "m_Slots": [
@@ -1007,9 +1103,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -633.0,
-            "y": 585.0,
-            "width": 120.0,
+            "x": -671.0000610351563,
+            "y": 586.9999389648438,
+            "width": 119.99993896484375,
             "height": 77.00006103515625
         }
     },
@@ -1758,8 +1854,8 @@
     "m_ObjectId": "d23729e66ece4e16bdc2ade26d5f609c",
     "m_Title": "Removedor de Front Faces",
     "m_Position": {
-        "x": -658.0,
-        "y": 525.9999389648438
+        "x": -843.0,
+        "y": 527.9999389648438
     }
 }
 
@@ -1803,6 +1899,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "d37f15415bbb4816a08b54640fcf985a",
+    "m_Title": "Inlfar las caras 2",
+    "m_Content": "Sumo a los vectores la posicion del objeto",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -540.0,
+        "y": -139.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "8338cd1c3d53431885d5aa591ad10b5c"
     }
 }
 
