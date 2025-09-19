@@ -8,9 +8,9 @@ public class Shield : MonoBehaviour
     [SerializeField] AnimationCurve _DisplacementCurve;
     [SerializeField] float _DisplacementMagnitude;
     [SerializeField] float _LerpSpeed;
-    [SerializeField] float _DisolveSpeed;
+    [SerializeField] float _DissolveSpeed;
     bool _shieldOn;
-    Coroutine _disolveCoroutine;
+    Coroutine _dissolveCoroutine;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,11 +50,11 @@ public class Shield : MonoBehaviour
             target = 0;
         }
         _shieldOn = !_shieldOn;
-        if (_disolveCoroutine != null)
+        if (_dissolveCoroutine != null)
         {
-            StopCoroutine(_disolveCoroutine);
+            StopCoroutine(_dissolveCoroutine);
         }
-        _disolveCoroutine = StartCoroutine(Coroutine_DisolveShield(target));
+        _dissolveCoroutine = StartCoroutine(Coroutine_DissolveShield(target));
     }
 
     IEnumerator Coroutine_HitDisplacement()
@@ -68,14 +68,14 @@ public class Shield : MonoBehaviour
         }
     }
 
-    IEnumerator Coroutine_DisolveShield(float target)
+    IEnumerator Coroutine_DissolveShield(float target)
     {
-        float start = _renderer.material.GetFloat("_Disolve");
+        float start = _renderer.material.GetFloat("_Dissolve");
         float lerp = 0;
         while (lerp < 1)
         {
-            _renderer.material.SetFloat("_Disolve", Mathf.Lerp(start,target,lerp));
-            lerp += Time.deltaTime * _DisolveSpeed;
+            _renderer.material.SetFloat("_Dissolve", Mathf.Lerp(start,target,lerp));
+            lerp += Time.deltaTime * _DissolveSpeed;
             yield return null;
         }
     }
