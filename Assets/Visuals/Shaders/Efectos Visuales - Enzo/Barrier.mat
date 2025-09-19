@@ -37,13 +37,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Frequency: 1
-    - _Fresnei_Power: 10
+    - _Frequency: 1.75
+    - _Fresnei_Power: 50
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 0.5
+    - _Speed: 2.73
     m_Colors:
-    - _Color: {r: 0.2971698, g: 1, b: 0.9571533, a: 0}
+    - _Color: {r: 0.16015486, g: 0.5754717, b: 0.5499494, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &157163288674876102
 MonoBehaviour:
