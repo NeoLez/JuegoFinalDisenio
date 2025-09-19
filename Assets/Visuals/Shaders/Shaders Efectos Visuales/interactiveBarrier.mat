@@ -38,6 +38,8 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
+    - Vector1_689f7ceae4b946f38b5ff9bf84f2f023: 1.5
+    - Vector1_cf86a053aa2c40e78a605292021f44c3: 3
     - _Dissolve: 0
     - _QueueControl: 0
     m_Colors: []
