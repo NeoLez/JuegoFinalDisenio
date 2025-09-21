@@ -16,7 +16,12 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 6a390e76234a63449aaa5928cac791c8
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 2cb987137b739894682ccea9106cd69b
+    m_Address: Assets/Visuals/Packs/LowPolyDungeon/Materials/Wood_Basic.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4ff4aac0c741cb8458ce770e6c0dbc73, type: 2}
   m_SchemaSet:

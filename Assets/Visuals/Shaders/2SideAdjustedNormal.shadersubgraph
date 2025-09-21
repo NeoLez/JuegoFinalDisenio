@@ -28,7 +28,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "367ac71507434ad2aa908cd77c5eab15"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -171,6 +175,26 @@
     "m_ObjectId": "1648fac924c4407997614b15c971bef4",
     "m_Name": "",
     "m_ChildObjectList": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "367ac71507434ad2aa908cd77c5eab15",
+    "m_Title": "",
+    "m_Content": "Devuelve la normal ajustada según si es la front o back face.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -351.0447692871094,
+        "y": -104.59700775146485,
+        "width": 185.55223083496095,
+        "height": 100.29850769042969
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {

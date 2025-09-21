@@ -25,7 +25,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "e55056de048647b5aa16d49369118395"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -298,6 +302,26 @@
         "z": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "e55056de048647b5aa16d49369118395",
+    "m_Title": "",
+    "m_Content": "Devuelve un valur de 1 si la superficie es opuesta a la luz y de -1 si esta mirando a la luz",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -541.6119384765625,
+        "y": -151.88058471679688,
+        "width": 199.88058471679688,
+        "height": 100.29850769042969
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
