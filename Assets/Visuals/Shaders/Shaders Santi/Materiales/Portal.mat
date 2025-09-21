@@ -50,6 +50,7 @@ Material:
     m_Colors:
     - _Base_Color: {r: 0.01846373, g: 1, b: 0, a: 0.9019608}
     - _Centro_del_portal: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _EmmisiveColor: {r: 6.040496, g: 32, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4157993254757020479
 MonoBehaviour:
