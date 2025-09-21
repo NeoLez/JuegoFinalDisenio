@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: b1c0ed017230ebc4992a1cf253b96f98, type: 3}
-  m_Parent: {fileID: -876546973899608171, guid: b1c0ed017230ebc4992a1cf253b96f98, type: 3}
+  m_Name: ElectricityMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: e35b461aad3fa464fa6518659b78eedd, type: 3}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -22,13 +22,33 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaCliping: 0.36
+    - _NoiseScale: 120
+    - _Power: 10
     - _QueueControl: 0
-    m_Colors: []
+    - _QueueOffset: 0
+    - _Thinckness: 3.5
+    m_Colors:
+    - _Color: {r: 1.1394532, g: 1.1698112, b: 0, a: 0}
+    - _Speed: {r: 0, g: 0.05, b: 0, a: 0}
+    - _Speed2: {r: 0.1, g: -0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &5631726432799993998
+--- !u!114 &1048833565731195358
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
