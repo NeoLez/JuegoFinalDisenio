@@ -29,7 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   passMaterial: {fileID: 2100000, guid: 7dd53728a3f9ea8738298c04a2173c76, type: 2}
-  injectionPoint: 600
+  injectionPoint: 450
   requirements: 5
   passIndex: 0
 --- !u!114 &11400000
