@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Test 1
-  m_Shader: {fileID: 4800000, guid: e22d85c80111ea6419fde4d49cd9e3d0, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d80216c3939c9536e80bac37ee4b5313, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -110,7 +110,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 0.1
+    - _Density: 0.92
     - _DensityMultiplier: 0
     - _DensityThreshold: 0
     - _DetailAlbedoMapScale: 1
@@ -126,10 +126,10 @@ Material:
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
     - _MAIN_LIGHT_SHADOWS_SCREEN: 1
     - _MaxDistance: 100
-    - _MaxRayLength: 40.01
+    - _MaxRayLength: 40
     - _Metallic: 0
     - _NoiseOffset: 7.3
-    - _NoiseScale: 1.93
+    - _NoiseScale: 1
     - _NoiseTiling: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -140,14 +140,14 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StepSize: 1.6
+    - _StepSize: 1
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _distance: 23.4
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.9411765, b: 0.78431374, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightContribution: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
