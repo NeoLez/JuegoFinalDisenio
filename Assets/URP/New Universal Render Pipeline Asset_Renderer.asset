@@ -52,7 +52,8 @@ MonoBehaviour:
   - {fileID: -8084386362661553412}
   - {fileID: 7383043815810519153}
   - {fileID: -1889981232632231715}
-  m_RendererFeatureMap: 3ad335fedda89424fcba8ba26f7dce8f71d087c23bd77566dd08cd1c1570c5e5
+  - {fileID: 331083011332033092}
+  m_RendererFeatureMap: 3ad335fedda89424fcba8ba26f7dce8f71d087c23bd77566dd08cd1c1570c5e544ca9ca13e3e9804
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   shaders:
@@ -90,6 +91,28 @@ MonoBehaviour:
   m_CopyDepthMode: 1
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &331083011332033092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da1f5b1f37e9b34da4c29c89838dc59, type: 3}
+  m_Name: Underwater Effects
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    material: {fileID: 2100000, guid: d7eff91adf883494db9dbd5fd180ae71, type: 2}
+    renderPassEvent: 400
+    color: {r: 0.12028302, g: 0.30688956, b: 0.4811321, a: 0}
+    FogDensity: 0.04
+    alpha: 0.2
+    refraction: 0.7
+    normalmap: {fileID: 2800000, guid: 08ef20a01c156e1428ca81211ca1275d, type: 3}
+    UV: {x: 1.2, y: 1.2, z: 0.2, w: 0.2}
 --- !u!114 &2635917353324761914
 MonoBehaviour:
   m_ObjectHideFlags: 0
