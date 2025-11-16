@@ -10170,6 +10170,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterSurface: {fileID: 1000238751}
   rendererData: {fileID: 11400000, guid: 42efbb638e924c34698774eed775815f, type: 2}
+  darknessFadeTime: 0
+  distortionHoldTime: 1.3
+  distortionFadeTime: 1.3
 --- !u!1 &1005985602
 GameObject:
   m_ObjectHideFlags: 0
