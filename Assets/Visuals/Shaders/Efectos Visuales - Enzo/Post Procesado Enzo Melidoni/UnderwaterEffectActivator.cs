@@ -79,7 +79,7 @@ public class UnderwaterEffectActivator : MonoBehaviour
             return;
         }
 
-        // 2) DARKNESS ALREADY GONE → HOLD DISTORTION
+        //DARKNESS ALREADY GONE → HOLD DISTORTION
         if (distortionTimer > 0f)
         {
             distortionTimer -= Time.deltaTime;

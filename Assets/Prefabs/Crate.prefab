@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 9109469717672159308}
   - component: {fileID: 3013483531723740968}
   - component: {fileID: 8023579425999540675}
+  - component: {fileID: -716509391674180442}
   m_Layer: 3
   m_Name: Crate
   m_TagString: Untagged
@@ -233,3 +234,20 @@ MonoBehaviour:
   fireEffectSound: {fileID: 8300000, guid: ed5121496fd2f084a830e4d52498b07e, type: 3}
   fireImpactSound: {fileID: 8300000, guid: 5d6761cd0ba798c46a40f521746bebde, type: 3}
   fireParticlesPrefab: {fileID: 535533120961856120, guid: dac6e8fcd074c244d9585b785be24147, type: 3}
+--- !u!114 &-716509391674180442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935537089817935342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a6b30a1f68de94b8ddcd6e732a38f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buoyancyForce: 9
+  waterDrag: 0.92
+  angularDrag: 0.85
+  waterSurfaceY: 1
+  densityMultiplier: 1

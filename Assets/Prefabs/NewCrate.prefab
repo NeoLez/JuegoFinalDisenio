@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 8019606465637920440}
   - component: {fileID: 811692144741658459}
   - component: {fileID: 9177630023694215266}
+  - component: {fileID: 8562144486358476314}
   m_Layer: 3
   m_Name: NewCrate
   m_TagString: Untagged
@@ -304,6 +305,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceIntensity: 0.01
   forceReduction: 0.1
+--- !u!114 &8562144486358476314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939185204267594885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a6b30a1f68de94b8ddcd6e732a38f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buoyancyForce: 10
+  waterDrag: 1
+  angularDrag: 0.6
+  waterSurfaceY: 1
+  densityMultiplier: 1
 --- !u!1 &6990653472714714262
 GameObject:
   m_ObjectHideFlags: 0
