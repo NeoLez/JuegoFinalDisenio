@@ -29,7 +29,7 @@ public class DrawingSurfaceSpells : MonoBehaviour, IDrawingSurface {
         _lineMeshFilter = linesObject.AddComponent<MeshFilter>();
         var meshRenderer = linesObject.AddComponent<MeshRenderer>();
         meshRenderer.material = lineMaterial;
-        linesObject.gameObject.layer = LayerMask.NameToLayer("FirstPerson");
+        linesObject.gameObject.layer = LayerMask.NameToLayer("Default");
         
         GameObject circlesObject = new GameObject();
         circlesObject.transform.SetParent(transform);
@@ -38,7 +38,7 @@ public class DrawingSurfaceSpells : MonoBehaviour, IDrawingSurface {
         _circlesMeshFilter = circlesObject.AddComponent<MeshFilter>();
         var circlesMeshRenderer = circlesObject.AddComponent<MeshRenderer>();
         circlesMeshRenderer.material = circleMaterial;
-        circlesObject.layer = LayerMask.NameToLayer("FirstPerson");
+        circlesObject.layer = LayerMask.NameToLayer("Default");
         
         DrawCircles();
     }

@@ -109,7 +109,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 0.92
+    - _Density: 2
     - _DensityMultiplier: 0
     - _DensityThreshold: 0
     - _DetailAlbedoMapScale: 1
@@ -125,7 +125,7 @@ Material:
     - _MAIN_LIGHT_SHADOWS_CASCADE: 0
     - _MAIN_LIGHT_SHADOWS_SCREEN: 1
     - _MaxDistance: 100
-    - _MaxRayLength: 104.3
+    - _MaxRayLength: 60.43
     - _Metallic: 0
     - _NoiseOffset: 7.3
     - _NoiseScale: 2
