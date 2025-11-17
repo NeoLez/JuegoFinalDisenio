@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: VenomEffect
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   passMaterial: {fileID: 2100000, guid: 6bc7b574596a88746b701cf8dc69cdcf, type: 2}
   injectionPoint: 600
   requirements: 4
@@ -121,14 +121,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da1f5b1f37e9b34da4c29c89838dc59, type: 3}
   m_Name: Underwater Effects
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     material: {fileID: 2100000, guid: d7eff91adf883494db9dbd5fd180ae71, type: 2}
     renderPassEvent: 400
     color: {r: 0.08223568, g: 0.41459876, b: 0.5283019, a: 1}
     FogDensity: 0
     alpha: 0
-    refraction: 1
+    refraction: 0
     normalmap: {fileID: 2800000, guid: 08ef20a01c156e1428ca81211ca1275d, type: 3}
     UV: {x: 1.3, y: 1.3, z: 0.2, w: 0.2}
 --- !u!114 &2635917353324761914
