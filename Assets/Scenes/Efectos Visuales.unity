@@ -21733,6 +21733,7 @@ GameObject:
   - component: {fileID: 1414952827}
   - component: {fileID: 1414952826}
   - component: {fileID: 1414952825}
+  - component: {fileID: 1414952832}
   m_Layer: 3
   m_Name: Cylinder_1
   m_TagString: Untagged
@@ -21795,11 +21796,11 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e4f1f0b23a6fcfe4799af2af9956a913, type: 2}
 --- !u!33 &1414952829
@@ -21867,6 +21868,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -522.219, z: 0}
+--- !u!114 &1414952832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414952824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7093bd3cafd1fd64b8094058b84a0df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: Venom Effect (Full Screen Pass Renderer Feature)
 --- !u!1001 &1416891447
 PrefabInstance:
   m_ObjectHideFlags: 0
