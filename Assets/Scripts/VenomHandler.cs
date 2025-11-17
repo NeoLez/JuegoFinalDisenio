@@ -10,14 +10,11 @@ namespace DefaultNamespace {
         public float rateOfChange;
         private void Update() {
             currentValue = mat.GetFloat("_VignetteIntensity");
-            Debug.Log($"Current value: {currentValue}");
             if (poisoned) {
                 currentValue = Mathf.Min(maxValue, currentValue + rateOfChange);
-                Debug.Log($"Added. Current Value: {currentValue}");
             }
             else {
                 currentValue = Mathf.Max(minValue, currentValue - rateOfChange);
-                Debug.Log($"Subtracted. Current Value: {currentValue}");
             }
             mat.SetFloat("_VignetteIntensity", currentValue);
         }
