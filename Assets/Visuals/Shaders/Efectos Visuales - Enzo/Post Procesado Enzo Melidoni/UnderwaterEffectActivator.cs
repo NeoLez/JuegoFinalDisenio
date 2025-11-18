@@ -8,7 +8,12 @@ public class UnderwaterEffectActivator : MonoBehaviour
 
     public float darknessFadeTime = 2f;  
     public float distortionHoldTime = 2f;   
-    public float distortionFadeTime = 1f;   
+    public float distortionFadeTime = 1f;
+
+    [Header("Effect Intensity")]
+    public float originalDepth = 0.04f;
+    public float originalBlend = 0.2f;
+    public float originalDistortion = 1f;
 
     private Underwater underwater;
     private ScriptableRendererFeature feature;
@@ -17,11 +22,6 @@ public class UnderwaterEffectActivator : MonoBehaviour
     private float darknessFadeValue = 1f;
     private float distortionTimer;
     private float refractionFadeValue = 1f;
-
-    //ORIGINAL VALUES (DO NOT CHANGE)
-    private const float ORIGINAL_FOG = 0.04f;
-    private const float ORIGINAL_ALPHA = 0.2f;
-    private const float ORIGINAL_REFRACTION = 1f;
 
     void Start()
     {
@@ -52,9 +52,9 @@ public class UnderwaterEffectActivator : MonoBehaviour
             darknessFadeValue = 1f;
             refractionFadeValue = 1f;
 
-            underwater.settings.FogDensity = ORIGINAL_FOG;
-            underwater.settings.alpha = ORIGINAL_ALPHA;
-            underwater.settings.refraction = ORIGINAL_REFRACTION;
+            underwater.settings.DepthIntensity = originalDepth;
+            underwater.settings.BlendAmount = originalBlend;
+            underwater.settings.Distortion = originalDistortion;
 
             distortionTimer = distortionHoldTime;
             return;
@@ -66,16 +66,16 @@ public class UnderwaterEffectActivator : MonoBehaviour
             wasUnderwater = false;
         }
 
-        //FADE DARKNESS OUT (fog + alpha)
+        //FADE DARKNESS OUT (depth + blend)
         if (darknessFadeValue > 0f)
         {
             darknessFadeValue -= Time.deltaTime / darknessFadeTime;
             darknessFadeValue = Mathf.Clamp01(darknessFadeValue);
 
-            underwater.settings.FogDensity = ORIGINAL_FOG * darknessFadeValue;
-            underwater.settings.alpha = ORIGINAL_ALPHA * darknessFadeValue;
+            underwater.settings.DepthIntensity = originalDepth * darknessFadeValue;
+            underwater.settings.BlendAmount = originalBlend * darknessFadeValue;
 
-            underwater.settings.refraction = ORIGINAL_REFRACTION; //still 100% for now
+            underwater.settings.Distortion = originalDistortion; //still 100% for now
             return;
         }
 
@@ -84,7 +84,7 @@ public class UnderwaterEffectActivator : MonoBehaviour
         {
             distortionTimer -= Time.deltaTime;
 
-            underwater.settings.refraction = ORIGINAL_REFRACTION;
+            underwater.settings.Distortion = originalDistortion;
             return;
         }
 
@@ -94,7 +94,7 @@ public class UnderwaterEffectActivator : MonoBehaviour
             refractionFadeValue -= Time.deltaTime / distortionFadeTime;
             refractionFadeValue = Mathf.Clamp01(refractionFadeValue);
 
-            underwater.settings.refraction = ORIGINAL_REFRACTION * refractionFadeValue;
+            underwater.settings.Distortion = originalDistortion * refractionFadeValue;
         }
         else
         {
