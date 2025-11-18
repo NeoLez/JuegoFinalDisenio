@@ -27,6 +27,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 805c4671c0fe3a24b9d3c326105df882
+    m_Address: Assets/Visuals/Shaders/Efectos Visuales Belen/Parcial 2/interactiveBarrier.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4ff4aac0c741cb8458ce770e6c0dbc73, type: 2}
   m_SchemaSet:
