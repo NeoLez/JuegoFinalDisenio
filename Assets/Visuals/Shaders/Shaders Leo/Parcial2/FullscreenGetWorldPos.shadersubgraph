@@ -40,7 +40,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "0f286bf92eb948b7896a68f1eeb5d436"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -234,6 +238,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "0f286bf92eb948b7896a68f1eeb5d436",
+    "m_Title": "New Note",
+    "m_Content": "Obtains world position of every pixel on screen based on depth buffer",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1179.0,
+        "y": -274.0,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
