@@ -42,9 +42,9 @@ Material:
     - _Power: 10
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Thinckness: 3.5
+    - _Thinckness: 10.49
     m_Colors:
-    - _Color: {r: 1.1394532, g: 1.1698112, b: 0, a: 0}
+    - _Color: {r: 0.23363516, g: 0, b: 1.1698112, a: 0}
     - _Speed: {r: 0, g: 0.05, b: 0, a: 0}
     - _Speed2: {r: 0.1, g: -0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
