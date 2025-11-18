@@ -201,6 +201,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "11a2815de78f4383ae138db56eca4e5c"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "799de1e54a494c23a0abeb873e1502fb"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "1b2dc34dd1e04f1dad0e4ec2fccc08b4"
                 },
                 "m_SlotId": 0
@@ -257,6 +271,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "3c2bcfd8c56b4f9caf399a867b5890c8"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "e85e53c1c105479e8b220f8a8de8664e"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "43fab30eb82b4109a78e9e69b7bcb626"
                 },
                 "m_SlotId": 2
@@ -306,20 +334,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "ed02233f07104d649e7e99dbe8006a72"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "61fcf768838a4d66bebdab25ef46f0f4"
-                },
-                "m_SlotId": 3
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "799de1e54a494c23a0abeb873e1502fb"
                 },
                 "m_SlotId": 0
             }
@@ -1739,7 +1753,7 @@
     "m_ObjectId": "2f6e0a30501a4c1cbc8dadc26704dfd4",
     "m_Version": 0,
     "m_fullscreenMode": 0,
-    "m_BlendMode": 0,
+    "m_BlendMode": 1,
     "m_SrcColorBlendMode": 0,
     "m_DstColorBlendMode": 1,
     "m_ColorBlendOperation": 0,

@@ -15,7 +15,7 @@ namespace Achievements {
                 _lastTimeChecked = Time.time;
                 
                 if (achievement.Evaluate()) {
-                    Debug.Log(achievement.Name);
+                    //Debug.Log(achievement.Name);
                 }
             }
         }

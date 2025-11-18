@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class VenomTrigger : MonoBehaviour
 {
-    public Material mat;
 
     private void OnCollisionEnter(Collision other) {
         if (other.gameObject.CompareTag("Player"))
