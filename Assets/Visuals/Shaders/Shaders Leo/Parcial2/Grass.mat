@@ -142,7 +142,7 @@ Material:
     - _Color: {r: 0.77254903, g: 0.8784314, b: 0.015686275, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LeafColor: {r: 0.77254903, g: 0.8784314, b: 0.015686275, a: 0}
-    - _PlayerPosition: {r: -6.6210375, g: 1.0758811, b: 68.362335, a: 0}
+    - _PlayerPosition: {r: -24.199232, g: 1.0758626, b: 63.860275, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _WindDirection: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []

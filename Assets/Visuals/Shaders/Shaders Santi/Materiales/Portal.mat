@@ -43,7 +43,7 @@ Material:
     m_Floats:
     - _Escala_de_Ruido: 50
     - _Fuerza_de_Ruido: 0
-    - _Fuerza_del_Portal: 20
+    - _Fuerza_del_Portal: 25
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Velocidad_de_giro: 1
