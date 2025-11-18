@@ -29,10 +29,6 @@ public class Shield : MonoBehaviour
                 HitShield(hit.point);
             }
         }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            OpenCloseShield();
-        }
     }
 
     public void HitShield(Vector3 hitPos)
