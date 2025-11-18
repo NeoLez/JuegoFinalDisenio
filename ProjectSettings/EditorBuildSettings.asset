@@ -14,16 +14,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: 973a84dd96f29544688448686a31c591
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 66a7d004b6502c04eb792efc2d4aa154
   - enabled: 0
     path: Assets/Scenes/Level 1.unity
     guid: 1d0d470f04f15394783ec9c8ec347bf7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 5b612097cca72e5499940ed241441b64
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Efectos Visuales.unity
     guid: 8fff023640ef0c44d824215869fd0cbf
   m_configObjects:
