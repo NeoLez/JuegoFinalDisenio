@@ -128,8 +128,8 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: d7eff91adf883494db9dbd5fd180ae71, type: 2}
     renderPassEvent: 400
     TintColor: {r: 0.008944447, g: 0.4589372, b: 0.6320754, a: 0}
-    DepthIntensity: 0
-    BlendAmount: 0
+    DepthIntensity: NaN
+    BlendAmount: NaN
     Distortion: 0
     DistortionMap: {fileID: 2800000, guid: 08ef20a01c156e1428ca81211ca1275d, type: 3}
     UVSettings: {x: 1.2, y: 1.2, z: 0.3, w: 0.2}
