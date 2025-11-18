@@ -48,7 +48,7 @@ Material:
     - _Ripple_Speed: 1
     - _Smoothnes: 0.5
     - _Transparency_Mask: 0.3
-    - _Wave_Size: 2
+    - _Wave_Size: 0.11
     - _Wave_Speed: 1
     - _Whave_NoiseScale: 0.5
     m_Colors:
