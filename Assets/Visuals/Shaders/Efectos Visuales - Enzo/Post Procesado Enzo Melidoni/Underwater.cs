@@ -8,129 +8,128 @@ using UnityEngine.Rendering.Universal;
 public class Underwater : ScriptableRendererFeature
 {
     [System.Serializable]
-    public class Settings
+    public class WaterSettings
     {
-        // Material that contains the shader for the underwater effect
+        // Material containing the water distortion shader
         public Material material;
 
-        // Defines when in the render pipeline this effect is executed
+        // Pipeline injection point for this effect
         public RenderPassEvent renderPassEvent = RenderPassEvent.AfterRenderingSkybox;
 
-        // Shader parameters that control color tint, fog, alpha blending and refraction
-        public Color color;
-        public float FogDensity = 1;
+        // Visual parameters matching shader properties
+        public Color TintColor;
+        public float DepthIntensity = 1;
         [Range(0, 1)]
-        public float alpha;
-        public float refraction = 0.1f;
+        public float BlendAmount;
+        public float Distortion = 0.1f;
 
-        // Normal map used to generate UV distortion (refraction)
-        public Texture normalmap;
+        // Distortion map texture
+        public Texture DistortionMap;
 
-        // UV parameters for scrolling/animating the normal map
-        public Vector4 UV = new Vector4(1,1,0.2f,0.1f);
+        // UV animation settings (tiling X/Y, scroll speed X/Y)
+        public Vector4 UVSettings = new Vector4(1, 1, 0.2f, 0.1f);
     }
 
-    public Settings settings = new Settings();
+    public WaterSettings settings = new WaterSettings();
 
-    class Pass : ScriptableRenderPass
+    class WaterRenderPass : ScriptableRenderPass
     {
-        public Settings settings;
-        private RenderTargetIdentifier source;
-        RenderTargetHandle tempTexture;
+        public WaterSettings settings;
+        private RenderTargetIdentifier sourceTarget;
+        RenderTargetHandle tempRenderTarget;
 
-        private string profilerTag;
+        private string passName;
 
-        public void Setup(RenderTargetIdentifier source)
+        public void SetupPass(RenderTargetIdentifier source)
         {
-            // Stores the camera's render target so the effect can be applied to it
-            this.source = source;
+            // Store camera render target reference
+            this.sourceTarget = source;
         }
 
-        public Pass(string profilerTag)
+        public WaterRenderPass(string name)
         {
-            // Name used by the GPU profiler to identify this render pass
-            this.profilerTag = profilerTag;
+            // Profiler label for performance tracking
+            this.passName = name;
         }
 
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
-            // Creates a temporary render texture with the same descriptor as the camera target
-            cmd.GetTemporaryRT(tempTexture.id, cameraTextureDescriptor);
+            // Allocate temporary texture matching camera resolution
+            cmd.GetTemporaryRT(tempRenderTarget.id, cameraTextureDescriptor);
 
-            // Sets the temporary texture as the target for this pass
-            ConfigureTarget(tempTexture.Identifier());
+            // Set temporary texture as render destination
+            ConfigureTarget(tempRenderTarget.Identifier());
 
-            // Clears the temporary texture before rendering
+            // Clear before drawing
             ConfigureClear(ClearFlag.All, Color.black);
         }
 
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
-            // Command buffer where draw and blit operations are recorded
-            CommandBuffer cmd = CommandBufferPool.Get(profilerTag);
+            // Get command buffer for recording GPU commands
+            CommandBuffer cmd = CommandBufferPool.Get(passName);
             cmd.Clear();
             
             try
             {
-                // Sends all user-defined parameters to the shader
-                settings.material.SetFloat("_FogDensity", settings.FogDensity);
-                settings.material.SetFloat("_alpha", settings.alpha);
-                settings.material.SetColor("_color", settings.color);
-                settings.material.SetTexture("_NormalMap", settings.normalmap);
-                settings.material.SetFloat("_refraction", settings.refraction);
-                settings.material.SetVector("_normalUV", settings.UV);
+                // Update shader properties with current settings
+                settings.material.SetFloat("_FogDensity", settings.DepthIntensity);
+                settings.material.SetFloat("_alpha", settings.BlendAmount);
+                settings.material.SetColor("_color", settings.TintColor);
+                settings.material.SetTexture("_NormalMap", settings.DistortionMap);
+                settings.material.SetFloat("_refraction", settings.Distortion);
+                settings.material.SetVector("_normalUV", settings.UVSettings);
 
-                // Copies the current camera color buffer into the temporary texture
-                cmd.Blit(source, tempTexture.Identifier());
+                // Copy camera output to temporary buffer
+                cmd.Blit(sourceTarget, tempRenderTarget.Identifier());
 
-                // Applies the underwater shader to the temporary texture
-                // and writes the result back into the camera target
-                cmd.Blit(tempTexture.Identifier(), source, settings.material, 0);
+                // Apply water effect shader and write back to camera target
+                cmd.Blit(tempRenderTarget.Identifier(), sourceTarget, settings.material, 0);
 
-                // Submits the recorded commands for execution
+                // Execute all queued commands
                 context.ExecuteCommandBuffer(cmd);
             }
             catch
             {
-                Debug.LogError("Error executing underwater pass.");
+                Debug.LogError("Failed to execute water effect render pass.");
             }
 
-            // Cleans and releases the command buffer
+            // Release command buffer resources
             cmd.Clear();
             CommandBufferPool.Release(cmd);
         }
     }
 
-    Pass pass;
-    RenderTargetHandle renderTextureHandle;
+    WaterRenderPass renderPass;
+    RenderTargetHandle targetHandle;
 
     public override void Create()
     {
-        // Instantiates the render pass that applies the underwater effect
-        pass = new Pass("Underwater Effects");
+        // Initialize the custom render pass
+        renderPass = new WaterRenderPass("Water Effect Pass");
 
-        // Name displayed inside the Renderer Feature list in the URP asset
-        name = "Underwater Effects";
+        // Display name in URP Renderer Features list
+        name = "Water Effect";
 
-        // Assigns user settings to the pass so they can be forwarded to the shader
-        pass.settings = settings;
+        // Link settings to render pass
+        renderPass.settings = settings;
 
-        // Defines when this pass will execute in the render pipeline
-        pass.renderPassEvent = settings.renderPassEvent;
+        // Set execution timing in pipeline
+        renderPass.renderPassEvent = settings.renderPassEvent;
     }
 
     public override void SetupRenderPasses(ScriptableRenderer renderer, in RenderingData renderingData)
     {
-        // Retrieves the camera's color target (the final image before post-processing)
-        var cameraColorTargetIdent = renderer.cameraColorTarget;
+        // Get camera's color output buffer
+        var cameraColorTarget = renderer.cameraColorTarget;
 
-        // Pass receives the camera render target so it knows where to read from
-        pass.Setup(cameraColorTargetIdent);
+        // Provide render target to pass
+        renderPass.SetupPass(cameraColorTarget);
     }
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
-        // Enqueues the render pass so URP will execute it each frame
-        renderer.EnqueuePass(pass);
+        // Queue render pass for execution
+        renderer.EnqueuePass(renderPass);
     }
 }
