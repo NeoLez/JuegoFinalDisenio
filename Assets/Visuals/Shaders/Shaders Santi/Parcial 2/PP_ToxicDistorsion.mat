@@ -50,7 +50,7 @@ Material:
     - _VinietaPower: 0.95
     - _VinietaSharpnerPower: 1.02
     - _VinietaSharpnerPowerOverride: 0
-    - _ZoomAmount: 1
+    - _ZoomAmount: 1.1
     m_Colors:
     - _Offset: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _ToxicColor: {r: 0.73060405, g: 1.2075472, b: 0.31327876, a: 1}

@@ -17292,7 +17292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materialToxico: {fileID: 2100000, guid: e7e7a0508af90cc429f310641d9f6765, type: 2}
-  nombrePropiedad: MasterIntensity
+  nombrePropiedad: _MasterIntensity
 --- !u!1001 &1810019178
 PrefabInstance:
   m_ObjectHideFlags: 0

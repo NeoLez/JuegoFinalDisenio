@@ -85,11 +85,11 @@ MonoBehaviour:
   - {fileID: 2635917353324761914}
   - {fileID: -8084386362661553412}
   - {fileID: 7383043815810519153}
+  - {fileID: 3622551620903186762}
   - {fileID: -1889981232632231715}
   - {fileID: -6982367247571742393}
   - {fileID: -1829623456268474531}
-  - {fileID: 3622551620903186762}
-  m_RendererFeatureMap: 3ad335fedda89424fcba8ba26f7dce8f71d087c23bd77566dd08cd1c1570c5e547112a85fba5199f5d27650829df9be64a31739081e34532
+  m_RendererFeatureMap: 3ad335fedda89424fcba8ba26f7dce8f71d087c23bd775664a31739081e34532dd08cd1c1570c5e547112a85fba5199f5d27650829df9be6
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   shaders:
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   passMaterial: {fileID: 2100000, guid: e7e7a0508af90cc429f310641d9f6765, type: 2}
-  injectionPoint: 600
+  injectionPoint: 550
   requirements: 4
   passIndex: 0
 --- !u!114 &7383043815810519153
