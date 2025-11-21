@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69a19d29ef66464ea0afc7cd84fd6c2, type: 3}
   m_Name: VolumetricFogRendererFeature
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   downsampleDepthShader: {fileID: 4800000, guid: cffeaeec0396a2c4dad475266cc8dfeb, type: 3}
   volumetricFogShader: {fileID: 4800000, guid: 08f816187f9af0244a95556ee0cab83f, type: 3}
 --- !u!114 &-6982367247571742393
@@ -84,12 +84,12 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 2635917353324761914}
   - {fileID: -8084386362661553412}
-  - {fileID: 331083011332033092}
   - {fileID: 7383043815810519153}
   - {fileID: -1889981232632231715}
   - {fileID: -6982367247571742393}
   - {fileID: -1829623456268474531}
-  m_RendererFeatureMap: 3ad335fedda89424fcba8ba26f7dce8f44ca9ca13e3e980471d087c23bd77566dd08cd1c1570c5e547112a85fba5199f5d27650829df9be6
+  - {fileID: 3622551620903186762}
+  m_RendererFeatureMap: 3ad335fedda89424fcba8ba26f7dce8f71d087c23bd77566dd08cd1c1570c5e547112a85fba5199f5d27650829df9be64a31739081e34532
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   shaders:
@@ -198,6 +198,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   passMaterial: {fileID: 2100000, guid: 823eeb8f3823b6c4f952fdca7cc5dbfe, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
+--- !u!114 &3622551620903186762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: FullScreenPassRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: e7e7a0508af90cc429f310641d9f6765, type: 2}
   injectionPoint: 600
   requirements: 4
   passIndex: 0
