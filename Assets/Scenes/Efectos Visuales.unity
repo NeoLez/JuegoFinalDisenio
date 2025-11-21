@@ -13527,9 +13527,10 @@ GameObject:
   - component: {fileID: 1414952827}
   - component: {fileID: 1414952826}
   - component: {fileID: 1414952825}
+  - component: {fileID: 1414952832}
   m_Layer: 3
   m_Name: Cylinder_1
-  m_TagString: Untagged
+  m_TagString: ToxicGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13656,11 +13657,32 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9879852, z: -0, w: -0.15454875}
   m_LocalPosition: {x: 31.719, y: 0.44, z: 16.129}
-  m_LocalScale: {x: 1.8284702, y: 0.04394, z: 1.5037999}
+  m_LocalScale: {x: 1.8284702, y: 0.08934315, z: 1.5037999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -522.219, z: 0}
+--- !u!65 &1414952832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414952824}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.021236, y: 1.826471, z: 11.0121355}
+  m_Center: {x: 1.2787877, y: 0.9132355, z: 2.1821306}
 --- !u!1001 &1417941736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17232,6 +17254,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3590033677297714036, guid: 7b0a47058df02a140a1bf52da1619c24, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1800770684}
+    - targetCorrespondingSourceObject: {fileID: 3590033677297714036, guid: 7b0a47058df02a140a1bf52da1619c24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1800770699}
   m_SourcePrefab: {fileID: 100100000, guid: 7b0a47058df02a140a1bf52da1619c24, type: 3}
 --- !u!54 &1800770669 stripped
 Rigidbody:
@@ -17254,6 +17279,20 @@ MonoBehaviour:
   - {fileID: 2100000, guid: da49a41554b8f51469c6d23eb41f5297, type: 2}
   - {fileID: 2100000, guid: 5019bcddfa7b6b449ad0282d62a87aac, type: 2}
   - {fileID: 2100000, guid: d3f5915de189a914282715d6f2a7f26a, type: 2}
+--- !u!114 &1800770699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532415464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f6269d70fe74a42911c2da425b755c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialToxico: {fileID: 2100000, guid: e7e7a0508af90cc429f310641d9f6765, type: 2}
+  nombrePropiedad: MasterIntensity
 --- !u!1001 &1810019178
 PrefabInstance:
   m_ObjectHideFlags: 0

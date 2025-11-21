@@ -10,6 +10,7 @@ TagManager:
   - particles
   - Scanneable
   - Grid
+  - ToxicGround
   layers:
   - Default
   - TransparentFX

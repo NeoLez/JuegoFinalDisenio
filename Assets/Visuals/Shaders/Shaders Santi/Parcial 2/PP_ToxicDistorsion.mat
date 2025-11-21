@@ -41,13 +41,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Intensity: 0.041
-    - _Scale: 1.4
+    - _EffectIntensity: 0
+    - _Fullscreen_DepthWrite: 0
+    - _Intensity: 0.156
+    - _MasterIntensity: 0
+    - _Scale: 3
     - _VinietaIntensity: 1
     - _VinietaPower: 0.95
     - _VinietaSharpnerPower: 1.02
     - _VinietaSharpnerPowerOverride: 0
-    - _ZoomAmount: 1.1
+    - _ZoomAmount: 1
     m_Colors:
     - _Offset: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _ToxicColor: {r: 0.73060405, g: 1.2075472, b: 0.31327876, a: 1}
