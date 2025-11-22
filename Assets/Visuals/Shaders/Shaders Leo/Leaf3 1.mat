@@ -156,7 +156,7 @@ Material:
     - _Color: {r: 0.38657913, g: 0.4716981, b: 0.08640933, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LeafColor: {r: 0.77254903, g: 0.8784314, b: 0.015686275, a: 0}
-    - _PlayerPosition: {r: 27.547173, g: 1.4189616, b: -0.076101646, a: 0}
+    - _PlayerPosition: {r: 26.958698, g: 1.406821, b: -0.20420814, a: 0}
     - _PlayesPosition: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
