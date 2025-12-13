@@ -37,6 +37,6 @@ Material:
     - _alpha: 0
     - _refraction: 0
     m_Colors:
-    - _color: {r: 0, g: 0, b: 0, a: 0}
-    - _normalUV: {r: 1, g: 1, b: 0.2, a: 0.1}
+    - _color: {r: 0.046146322, g: 0.5754717, b: 0.4361993, a: 0}
+    - _normalUV: {r: 1.2, g: 1.2, b: 0.2, a: 0.2}
   m_BuildTextureStacks: []
