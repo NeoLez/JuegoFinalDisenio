@@ -3,7 +3,7 @@ using UnityEngine;
 public class RoomTrigger : MonoBehaviour
 {
     [SerializeField] private SpellBlockerEnemy enemy;
-    [SerializeField] private bool deactivateOnExit = false; // es opcional
+    [SerializeField] private bool deactivateOnExit = false; 
     
     private void OnTriggerEnter(Collider other)
     {
