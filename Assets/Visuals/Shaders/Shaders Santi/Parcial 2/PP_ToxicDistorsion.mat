@@ -44,7 +44,7 @@ Material:
     - _EffectIntensity: 0
     - _Fullscreen_DepthWrite: 0
     - _Intensity: 0.156
-    - _MasterIntensity: 1
+    - _MasterIntensity: 0
     - _Scale: 3
     - _VinietaIntensity: 1
     - _VinietaPower: 0.95
