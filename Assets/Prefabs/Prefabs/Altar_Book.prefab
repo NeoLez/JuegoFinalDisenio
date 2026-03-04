@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8545176282642527557}
   - component: {fileID: 3882539921155633239}
   - component: {fileID: 8212181720543469624}
+  - component: {fileID: 7075257213277947139}
+  - component: {fileID: 7946175860932837617}
   - component: {fileID: 3563393664852674200}
   - component: {fileID: 7073966595860784561}
   - component: {fileID: 4040634691271701957}
@@ -88,6 +90,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7075257213277947139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079211751947936615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a394b8eb310acc44793a053668ade105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookPanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  bookAnimator: {fileID: 0}
+  allowManualToggle: 1
+  autoCloseWhenEmpty: 1
+--- !u!114 &7946175860932837617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079211751947936615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09715acb4c08b894da079e58488cbe69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - Bienvenido al altar de las sombras...
+  - Este libro guarda los secretos de los antiguos.
+  - "Solo los dignos pueden leer sus p\xE1ginas."
+  useTypewriter: 1
+  typewriterSpeed: 0.04
+  interactDistance: 3
+  altarLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!65 &3563393664852674200
 BoxCollider:
   m_ObjectHideFlags: 0

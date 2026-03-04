@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7024678421864288623}
-  - component: {fileID: 6080610491374088497}
   - component: {fileID: 1158532707312971085}
   m_Layer: 5
   m_Name: DialogueTrigger
@@ -37,27 +36,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6.2, y: 0.23}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6080610491374088497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5597387164449088133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 375d418f9a954c148ba5af413faa2e70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDialoguePlaying: 0
-  isFillingInLine: 0
-  shouldStartAuto: 1
-  hasAutoPlayed: 0
-  dialogueInteraction: {fileID: 0}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueLines:
-  - 
 --- !u!65 &1158532707312971085
 BoxCollider:
   m_ObjectHideFlags: 0
