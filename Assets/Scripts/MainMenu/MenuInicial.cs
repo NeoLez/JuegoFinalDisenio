@@ -11,6 +11,15 @@ public class MenuInicial : MonoBehaviour
     [Header("Música")]
     public AudioSource musica;
     public float duracionFade = 2f;
+    
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        if (CheckpointManager.Instance != null)
+            CheckpointManager.Instance.ResetCheckpoint();
+    }
 
     public void Jugar()
     {

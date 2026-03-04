@@ -3,11 +3,31 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioSystem {
-    //TP2 Belen Mounier
     public AudioSource NonPositionAudioSource;
     private List<AudioSource> currentlyLoopingSounds = new();
     public AudioMixerGroup Music;
     public AudioMixerGroup VFX;
+
+    private List<AudioSource> pausedSources = new();
+
+    public void PauseAll() {
+        pausedSources.Clear();
+        AudioSource[] all = Object.FindObjectsOfType<AudioSource>();
+        foreach (AudioSource s in all) {
+            if (s.isPlaying) {
+                s.Pause();
+                pausedSources.Add(s);
+            }
+        }
+    }
+
+    public void ResumeAll() {
+        foreach (AudioSource s in pausedSources) {
+            if (s != null)
+                s.UnPause();
+        }
+        pausedSources.Clear();
+    }
 
     public void PlaySound(AudioClip audioClip, float volume = 1) {
         NonPositionAudioSource?.PlayOneShot(audioClip, volume);
@@ -36,7 +56,6 @@ public class AudioSystem {
         audioSource.volume = volume;
         audioSource.clip = audioClip;
         audioSource.Play();
-
         return audioSource;
     }
     
@@ -48,7 +67,6 @@ public class AudioSystem {
         audioSource.volume = volume;
         audioSource.clip = audioClip;
         audioSource.Play();
-
         return audioSource;
     }
 }

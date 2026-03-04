@@ -108,6 +108,11 @@ public class BookController : MonoBehaviour
         bookPanel.SetActive(false);
         dialogueText.text = "";
     }
+    
+    public void ForceClose()
+    {
+        EndDialogue();
+    }
 
     IEnumerator TypewriterEffect(string text, float speed)
     {

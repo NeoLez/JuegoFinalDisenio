@@ -101,5 +101,20 @@ public class UnderwaterEffectActivator : MonoBehaviour
             //end
             feature.SetActive(false);
         }
+        
+        
+    }
+    
+    void OnDestroy()
+    {
+        if (feature != null)
+            feature.SetActive(false);
+
+        if (underwater != null)
+        {
+            underwater.settings.DepthIntensity = 0f;
+            underwater.settings.BlendAmount = 0f;
+            underwater.settings.Distortion = 0f;
+        }
     }
 }

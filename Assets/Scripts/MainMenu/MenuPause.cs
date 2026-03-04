@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class MenuPause : MonoBehaviour
 {
-    //TP2 Enzo Francisco Melidoni
     public GameObject PauseMenu;
     public bool paused = false;
     public GameObject SalirConfirmar;
@@ -16,24 +15,21 @@ public class MenuPause : MonoBehaviour
     [Header("Sonidos")]
     public AudioClip sonidoPausa;
     public AudioClip sonidoReanudar;
-    private AudioSource audioSource;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         GameManager.Input.Pause.Pause.performed += TriggerMenu;
     }
 
     private void TriggerMenu(InputAction.CallbackContext ctx) {
         if (!paused)
         {
-            if (sonidoPausa != null)
-                GameManager.AudioSystem.PlaySound(sonidoPausa);
+            if (BookController.Instance != null)
+                BookController.Instance.ForceClose();
 
             PauseMenu.SetActive(true);
             paused = true;
 
-            Time.timeScale = 0;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
 
@@ -43,15 +39,11 @@ public class MenuPause : MonoBehaviour
             GameManager.Input.Scanner.Disable();
             GameManager.Input.Drag.Disable();
             GameManager.Input.CardUsage.Disable();
+            GameManager.Input.WorldInteractions.Disable();
 
-            AudioSource[] songs = FindObjectsOfType<AudioSource>();
-            foreach (AudioSource s in songs)
-            {
-                if (s != audioSource)
-                {
-                    s.Pause();
-                }
-            }
+            GameManager.AudioSystem.PauseAll();
+            if (sonidoPausa != null)
+                GameManager.AudioSystem.PlaySound(sonidoPausa);
         }
         else
         {
@@ -67,9 +59,7 @@ public class MenuPause : MonoBehaviour
         SalirConfirmar.SetActive(false);
         OpcionConfirmar.SetActive(false);
         paused = false;
-        
 
-        Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -79,22 +69,16 @@ public class MenuPause : MonoBehaviour
         GameManager.Input.Scanner.Enable();
         GameManager.Input.Drag.Enable();
         GameManager.Input.CardUsage.Enable();
-        
-        AudioSource[] songs = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource s in songs)
-        {
-            if (s != audioSource)
-            {
-                s.Play();
-            }
-        }
+        GameManager.Input.WorldInteractions.Enable();
+
+        GameManager.AudioSystem.ResumeAll();
     }
+
     public void VolverAlMenuPrincipal()
     {
-        Time.timeScale = 1; 
-        SceneManager.LoadScene(0); 
+        SceneManager.LoadScene(0);
     }
-    
+
     public void Quit()
     {
         Application.Quit();

@@ -39,9 +39,7 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                 globalAudioSource = audioManager.AddComponent<AudioSource>();
 
                 if (sfxMixerGroup != null)
-                {
                     globalAudioSource.outputAudioMixerGroup = sfxMixerGroup;
-                }
 
                 DontDestroyOnLoad(audioManager);
             }
@@ -50,9 +48,7 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                 globalAudioSource = audioManager.GetComponent<AudioSource>();
 
                 if (sfxMixerGroup != null && globalAudioSource.outputAudioMixerGroup != sfxMixerGroup)
-                {
                     globalAudioSource.outputAudioMixerGroup = sfxMixerGroup;
-                }
             }
         }
 
@@ -65,13 +61,14 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log($"[ButtonSound] Hover en: {gameObject.name}");
+
         if (hoverSound != null)
             globalAudioSource.PlayOneShot(hoverSound);
 
         if (buttonText != null)
             buttonText.color = hoverColor;
 
-       
         if (wasClicked && uiButton != null)
         {
             wasClicked = false;
@@ -81,12 +78,16 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        Debug.Log($"[ButtonSound] Exit en: {gameObject.name}");
+
         if (buttonText != null)
             buttonText.color = originalColor;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log($"[ButtonSound] Click en: {gameObject.name}");
+
         if (clickSound != null)
             globalAudioSource.PlayOneShot(clickSound);
 
@@ -100,21 +101,13 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         }
 
         if (abreOpciones && panelOpcionConfirmar != null)
-        {
             StartCoroutine(DelaySetActive(panelOpcionConfirmar, true));
-        }
         else if (abreSalir && panelSalirConfirmar != null)
-        {
             StartCoroutine(DelaySetActive(panelSalirConfirmar, true));
-        }
         else if (cierraOpciones && panelOpcionConfirmar != null)
-        {
             StartCoroutine(DelaySetActive(panelOpcionConfirmar, false));
-        }
         else if (cierraSalir && panelSalirConfirmar != null)
-        {
             StartCoroutine(DelaySetActive(panelSalirConfirmar, false));
-        }
     }
 
     private IEnumerator DelaySetActive(GameObject panel, bool state)

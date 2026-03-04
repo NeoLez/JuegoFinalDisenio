@@ -38,4 +38,10 @@ public class CheckpointManager : MonoBehaviour
     {
         return currentCheckpointID;
     }
+    
+    public void ResetCheckpoint()
+    {
+        currentCheckpointID = -1;
+        currentCheckpointPosition = Vector3.zero;
+    }
 }
